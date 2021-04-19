@@ -2,12 +2,13 @@ import React from "react";
 import { StyleSheet, Button, Text, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import { Provider, useDispatch } from "react-redux";
+import { Provider, useDispatch, useSelector } from "react-redux";
 import { store, saveName } from "./namesSlice";
 
 const Stack = createStackNavigator();
 
 const MainScreen = () => {
+  const names = useSelector((state) => state.names);
   const dispatch = useDispatch();
   return (
     <View style={styles.container}>
