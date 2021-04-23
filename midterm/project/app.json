@@ -1,0 +1,10 @@
+{
+  "name": "midterm",
+  "displayName": "Midterm exam :: CS 450 :: 2020/2021",
+  "expo": {
+    "name": "midterm.ssst.cs450",
+    "slug": "midterm.ssst.cs450",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"]
+  }
+}
