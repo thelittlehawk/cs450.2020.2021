@@ -1,7 +1,10 @@
 "use strict";
 const http = require("../utils/http");
-const data = require("../data");
+const { connect } = require("../db/connection");
+const { Episode } = require("../db/schema");
 
 module.exports.handler = async (event) => {
-  return http.ok({ episodes: data });
+  await connect();
+  const episodes = await Episode.find();
+  return http.ok({ episodes });
 };

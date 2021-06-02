@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "serverless-offline": "^7.0.0"
+  },
+  "dependencies": {
+    "mongoose": "^5.12.12"
   }
 }
